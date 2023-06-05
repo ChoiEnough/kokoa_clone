@@ -1,0 +1,78 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.nav__notification2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.nav__btn:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.nav__btn:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.nav__btn {
+  animation: appearBtnAnimation 0.5s ease-in-out forwards;
+  opacity: 0;
+}

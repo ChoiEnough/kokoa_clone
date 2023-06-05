@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+        <!-- wifi Icon-->
+      </div>
+      <div class="status-bar__column">
+        <span>21:23</span>
+      </div>
+      <div class="status-bar__column">
+        <span>80%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <a href="chats.html"><i class="fas fa-chevron-left fa-lg"></i></a>
+      <h2 class="screen-header__title">이태관</h2>
+      <div class="screen-header__icons">
+        <span
+          ><a href="find.html"><i class="fas fa-search fa-lg"></i></a
+        ></span>
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timeStamp">Tuesday, June 30, 2023</div>
+      <div class="message-row">
+        <img src="screenshot\최인호-34.jpg" />
+        <div class="message-row__content">
+          <span class="message-author">인호</span>
+          <div class="message-info">
+            <span class="message-bubble">rmfoxorhksdkqksrkqqek.</span>
+            <span class="message-time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message-info">
+            <span class="message-time">23:27</span>
+            <span class="message-bubble">그이반</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fas fa-smile"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
